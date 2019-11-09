@@ -1,13 +1,28 @@
 import React from 'react';
 import Players from './components/Players';
+import Navbar from './components/Navbar';
 import './App.css';
 
 class App extends React.Component {
+  state = {
+    data: []
+  }
+  
+  componentDidMount() {
+    fetch(`http://localhost:5000/api/players`)
+    .then(res => res.json())
+    .then(res => {
+        console.log(res);
+        this.setState({data: res})
+    })
+    .catch(err => console.log(err))
+}
 
   render() {
     return (
       <div className="App">
-        <Players/>
+        <Navbar/>
+        <Players data={this.state.data}/>
       </div>
     );
   }
