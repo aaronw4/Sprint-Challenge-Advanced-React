@@ -36,10 +36,16 @@
   color: #fff;
   background-color: #313843;
 
+  
+  .chart {
+    color: #fff;
+  }
+  
   .nav {
     background-color: #1F2022;
     border: none;
   }
+
 }
 
 .title {

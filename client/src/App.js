@@ -1,6 +1,7 @@
 import React from 'react';
 import Players from './components/Players';
 import Navbar from './components/Navbar';
+import Graph from './components/Graph';
 import './App.css';
 
 class App extends React.Component {
@@ -22,6 +23,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <Navbar/>
+        <Graph data={this.state.data}/>
         <Players data={this.state.data}/>
       </div>
     );
