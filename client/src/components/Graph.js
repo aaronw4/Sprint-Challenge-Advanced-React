@@ -1,5 +1,5 @@
 import ReactEcharts from 'echarts-for-react';
-import React, {useState} from 'react';
+import React from 'react';
 
 const Graph = (props) => {
     var x = props.data.map(players => (
