@@ -35,17 +35,15 @@
 .dark-mode {
   color: #fff;
   background-color: #313843;
+}
 
+.dark-mode .chart {
+  color: #fff;
+}
   
-  .chart {
-    color: #fff;
-  }
-  
-  .nav {
-    background-color: #1F2022;
-    border: none;
-  }
-
+.dark-mode .nav {
+  background-color: #1F2022;
+  border: none;
 }
 
 .title {
