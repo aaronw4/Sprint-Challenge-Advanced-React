@@ -10,7 +10,7 @@ class App extends React.Component {
   }
   
   componentDidMount() {
-    fetch(`http://localhost:5000/api/players`)
+    fetch(`https://arw-player-database.herokuapp.com/api/players`)
     .then(res => res.json())
     .then(res => {
         console.log(res);
